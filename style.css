@@ -1,0 +1,314 @@
+/* S@ 5:38 5/15/24  Fixed navbar and made it responsive :)*/
+/* Started @ 8:15  Did the footer!!!!! (youtube video) s@ 9:20*/
+/* Started @ 9:40 pm 5/21/24 S@ 12:30 am */
+/* Started @ 4:15 pm 5/22/24 S@ */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: unset;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-body{
+    font-size: 50px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.navbar{
+    background: #1A4F4C;
+    /* color: ffff; */
+    position: relative;
+}
+
+.navbar ul{
+    margin: unset;
+    padding: unset;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.navbar ul li p{
+    font-size: 35px;
+    padding: 20px 10px;
+    margin-left: 50px;
+    color: whitesmoke;
+}
+
+.navbar .nav-toggle{
+    display: flex;
+}
+
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    padding: 29px 20px;
+    font-size: 20px;
+}
+
+.navbar a.home {
+    background: #c8a2c896;
+}
+
+.navbar a:hover {
+    background: gray;
+}
+
+.navbar .hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: unset;
+    background: unset;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .hamburger svg{
+    stroke: white;
+}
+
+.navbar .hamburger .icon-close {
+    display: none;
+}
+
+@media screen and (max-width: 860px) {
+    .navbar.open ul{
+        display: block;
+    }
+
+    .navbar.open .nav-toggle{
+        display: block;
+    }
+
+    .navbar.open a {
+        display: block;
+    }
+
+    .navbar .nav-toggle{
+        display: none;
+    }
+
+    .navbar .hamburger{
+        display: block;
+    }
+
+    .navbar.open .hamburger .icon-open{
+        display: none;
+    }
+
+    .navbar.open .hamburger .icon-close{
+        display: block;
+        /* position: absolute; */
+        margin-top: 38%;
+
+    }
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        left: 10px;
+        
+    }
+    .icon-open{
+        margin-top: 38%;
+    }
+
+
+}
+
+footer{
+    background-color: #111;
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    /* width: 100%; */
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+.backgroundimgh{
+    background: url(Images/hosuensolarpanel.png);
+    background-repeat: repeat;
+    /* height: 35vh; */
+  }
+
+  #homeh{
+    height: 60vh;
+    width: 100%;
+    background: url(Images/horizon3.jpg);
+    background-position: center;
+  }
+
+  #homec{
+    height: 60vh;
+    width: 100%;
+    background: url(Images/CostBackGroundPT2.jpg);
+    background-position: center;
+  }
+
+  #homece{
+    height: 60vh;
+    width: 100%;
+    background: url(Images/CEbackground.jpg);
+    background-position: center;
+  }
+
+  #homes{
+    height: 60vh;
+    width: 100%;
+    background: url(Images/SourcesBackground.jpg);
+    background-position: center;
+  }
+
+  .content{
+    max-width: 1440px;
+    margin: auto;
+    text-align: justify;
+    padding: 3rem 50px;
+    line-height: 1.8rem;
+    height: 100%;
+
+  }
+
+  .contentcontact{
+    max-width: 1440px;
+    margin: auto;
+    text-align: justify;
+    padding: 3rem 50px;
+    line-height: 1.8rem;
+    /* height: 100%; */
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+
+  .content h2{
+    font-size: 3rem;
+    color: #1A4F4C;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: justify;
+    line-height: 1.0;
+  }
+
+  .content p{
+    font-size: 24px;
+    word-wrap: break-word;
+    backdrop-filter: blur(1px) saturate(10%);
+  }
+
+  body .content li{
+    font-size: 18pt;
+    padding: 20px;
+  }
+
+  .breadcrumbs p{
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 100%;
+  } 
